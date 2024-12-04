@@ -112,10 +112,21 @@ const Header = styled.header`
     justify-content: center;
     padding: 20px 100px;
     align-items: center;
+    @media(max-width: 600px){
+        flex-direction: column;
+        padding: 20px;
+        width:100%;
+    }
 `
 
 const LogoDiv = styled.div`
     width: 100%;
+        @media(max-width: 600px){
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px
+    }
 `
 
 const LinkDirection = styled.a`
@@ -135,6 +146,10 @@ const Section = styled.section`
 const H2 = styled.h2`
     margin-bottom: 50px;
     color: #3b4cca;
+    text-align: center;
+    @media(max-width:390px){
+        font-size: 18px;
+    }
 `
 
 const Ul = styled.ul`

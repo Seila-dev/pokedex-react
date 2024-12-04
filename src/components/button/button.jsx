@@ -27,5 +27,9 @@ const StyledButton = styled.button`
         left: 50%;
         transform: translateX(-50%);
         width: auto;
+        padding: 20px;
+        @media(max-width:550px){
+            font-size: 10px;
+        }
     }
     `;

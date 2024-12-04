@@ -1,5 +1,6 @@
 import pokemonLogo from '../assets/pokemonlogo.svg';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import pokemonBackground from '../assets/background.jpg'
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import '../App.css'
@@ -164,6 +165,12 @@ const Header = styled.header`
 
 const LogoDiv = styled.div`
     width: 100%;
+        @media(max-width: 600px){
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px
+    }
 `
 
 const LinkDirection = styled(Link)`
@@ -214,8 +221,7 @@ const Loading = styled.div`
 `
 
 const PokemonImage = styled.div`
-    background: url('../src/assets/background.jpg') center center no-repeat;
-    // background-color: #d5d4d9;
+    background-image: url(${pokemonBackground});
     border: 10px solid #a3a6fa;
     outline: 10px solid #f4f19f;
     width: 400px;

@@ -161,6 +161,11 @@ const Header = styled.header`
     justify-content: center;
     padding: 20px 100px;
     align-items: center;
+    @media(max-width: 600px){
+        flex-direction: column;
+        padding: 20px;
+        width:100%;
+    }
 `
 
 const LogoDiv = styled.div`
